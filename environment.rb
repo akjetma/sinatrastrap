@@ -1,5 +1,6 @@
 require 'sinatra'
 
-get '/' do
-  erb :index
-end
+Dir["#{ File.dirname(__FILE__) }/handlers/*.rb"].each { |file| require file }
+Dir["#{ File.dirname(__FILE__) }/helpers/*.rb"].each { |file| require file }
+
+helpers MainHelper
