@@ -1,3 +1,1 @@
-sinatrastrap
-============
-## Boilerplate for ruby sinatra applications
+a
